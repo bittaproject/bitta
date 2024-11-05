@@ -1,0 +1,15 @@
+version: '3'
+services:
+  frontend-blue:
+    image: publicdeveh/bitta-front:latest
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+
+  frontend-green:
+    image: publicdeveh/bitta-front:latest
+    ports:
+      - "3002:3000"
+    environment:
+      - NODE_ENV=production
